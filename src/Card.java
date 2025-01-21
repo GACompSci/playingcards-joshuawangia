@@ -1,9 +1,9 @@
 public class Card {
     // Implement your card class here
-    int val = 0;
-    int suit = 0;
-    String name = "";
-    String suitName = "";
+    private int val = 0;
+    private int suit = 0;
+    private String name = "";
+    private String suitName = "";
     
     public Card(){
         name = "Joker";
@@ -57,8 +57,8 @@ else{
         return val;
     }
 
-    public String suitString(){
-        return suitName;
+    public int getSuit(){
+        return suit;
     }
 
     public void setVal(int n){
