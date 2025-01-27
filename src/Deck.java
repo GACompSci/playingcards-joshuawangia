@@ -1,5 +1,5 @@
 public class Deck {
-    Card[] Deck = new Card[52];
+    private Card[] Deck = new Card[52];
     
     public Deck(){
         //Create Deck
@@ -11,6 +11,10 @@ public class Deck {
                 count++;
             }
         }
+        shuffle();
+    }
+
+    private void shuffle(){
         Card temp;
         for(int i = 0; i < Deck.length; i++){
             temp = Deck[i];
