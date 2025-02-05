@@ -23,7 +23,7 @@ public class Deck {
             Deck[newVal] = temp;
         }
     }
-
+    
     public Card drawCard(){
         Card[] newDeck = new Card[Deck.length-1];
         Card drawnCard = Deck[0];
